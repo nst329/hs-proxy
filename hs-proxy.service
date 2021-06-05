@@ -1,0 +1,10 @@
+[Unit]
+Description = ssl proxy
+
+[Service]
+ExecStart = HOME/ssh-proxy-start.sh
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target
